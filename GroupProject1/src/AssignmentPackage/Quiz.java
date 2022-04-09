@@ -1,3 +1,5 @@
+package AssignmentPackage;
+
 public class Quiz extends Assignment{
 
     public String getPriorityBehavior(){

@@ -1,3 +1,5 @@
+package AssignmentPackage;
+
 public abstract class  Assignment {
     PriorityBehavior priorityBehavior;
     String color;

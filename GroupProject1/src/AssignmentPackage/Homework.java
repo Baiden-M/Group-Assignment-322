@@ -1,3 +1,5 @@
+package AssignmentPackage;
+
 public class Homework extends Assignment{
     @Override
     public String getPriorityBehavior() {
