@@ -1,6 +1,6 @@
-package GroupProject1.src.AssignmentPackage;
+package AssignmentPackage;
 
-import GroupProject1.src.InputOutputPackage.InputDialog;
+import InputOutputPackage.InputDialog;
 
 public class Driver {
 

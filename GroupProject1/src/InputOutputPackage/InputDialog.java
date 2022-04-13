@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GroupProject1.src.InputOutputPackage;
+package InputOutputPackage;
 
 import GroupProject1.src.AssignmentPackage.Assignment;
 import GroupProject1.src.AssignmentPackage.Quiz;
