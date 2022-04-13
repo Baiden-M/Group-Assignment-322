@@ -14,6 +14,6 @@ public class D2L extends ThirdPartyWebsiteDecorator{
     public D2L(User user)
     {
         this.user = user;
-        
+        System.out.println("Account successfully linked");
     }
 }
