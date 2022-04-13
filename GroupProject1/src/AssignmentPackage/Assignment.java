@@ -1,4 +1,4 @@
-package AssignmentPackage;
+package GroupProject1.src.AssignmentPackage;
 
 public abstract class  Assignment {
     PriorityBehavior priorityBehavior;

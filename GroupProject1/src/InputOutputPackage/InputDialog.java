@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package InputOutputPackage;
+package GroupProject1.src.InputOutputPackage;
 
-import AssignmentPackage.Assignment;
-import AssignmentPackage.Quiz;
+import GroupProject1.src.AssignmentPackage.Assignment;
+import GroupProject1.src.AssignmentPackage.Quiz;
 
 
 /**

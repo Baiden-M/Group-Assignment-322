@@ -1,4 +1,4 @@
-package AssignmentPackage;
+package GroupProject1.src.AssignmentPackage;
 
 public class MediumPriority implements PriorityBehavior{
     @Override
