@@ -1,7 +1,7 @@
-package AssignmentPackage;
+package GroupProject1.src.AssignmentPackage;
 
+import GroupProject1.src.InputOutputPackage.InputDialog;
 
-import InputOutputPackage.InputDialog;
 public class Driver {
 
     public static void main(String[] args) {
