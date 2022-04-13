@@ -16,6 +16,7 @@ public class PhoneNumber extends PhoneDecorator{
     {
         this.user = user;
         number = num;
+        System.out.println("Phone number successfully added");
     }
     
     public BigInteger getPhoneNumber()
