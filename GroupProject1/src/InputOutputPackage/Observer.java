@@ -10,5 +10,9 @@ package InputOutputPackage;
  * @author silve
  */
 public interface Observer {
+    public void update();
+    
+    public void display();
+        
     
 }

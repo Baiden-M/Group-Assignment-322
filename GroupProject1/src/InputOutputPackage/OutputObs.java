@@ -10,5 +10,16 @@ package InputOutputPackage;
  * @author silve
  */
 public interface OutputObs {
+    public void registerObserver();
+        
+    
+    public void removeObserver();
+        
+    
+    public void notifyObserver();
+        
+    
+    public void getAssignments();
+        
     
 }

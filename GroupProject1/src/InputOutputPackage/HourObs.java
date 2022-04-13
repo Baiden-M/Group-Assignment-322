@@ -9,6 +9,14 @@ package InputOutputPackage;
  *
  * @author silve
  */
-public class HourObs {
+public class HourObs implements Observer{
+    
+    public void update(){
+        
+    }
+    
+    public void display(){
+        
+    }
     
 }

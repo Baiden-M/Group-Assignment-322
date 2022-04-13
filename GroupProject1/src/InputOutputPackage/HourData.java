@@ -9,6 +9,17 @@ package InputOutputPackage;
  *
  * @author silve
  */
-public class HourData {
-    
+public class HourData implements OutputObs{
+    public void registerObserver(){
+        
+    }
+    public void removeObserver(){
+        
+    }
+    public void notifyObserver(){
+        
+    }
+    public void getAssignments(){
+        
+    }
 }
