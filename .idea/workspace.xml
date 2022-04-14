@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf6f2008-b0d2-47fd-af60-45e411e10f72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/NotificationDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/NotificationMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/NotificationStrategyDesignClassDiagram.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/Reminder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/NotificationMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/NotificationMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Group-Assignment-322/NotificationPackage/NotificationDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Group-Assignment-322/NotificationPackage/NotificationDate.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,38 +29,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
-  <component name="RunManager">
-    <configuration name="NotificationDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NotificationPackage.NotificationDate" />
-      <module name="Group-Assignment-322" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="NotificationPackage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="ESOF-322-Group-Assignment" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ESOF-322-Group-Assignment" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/bryce/ESOF-322-Group-Assignment"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.NotificationMessage">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="ESOF-322-Group-Assignment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,8 +101,48 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="NotificationDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NotificationPackage.NotificationDate" />
+      <module name="Group-Assignment-322" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="NotificationPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationMessage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NotificationPackage.NotificationMessage" />
+      <module name="Group-Assignment-322" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="NotificationPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="ESOF-322-Group-Assignment" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="ESOF-322-Group-Assignment" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NotificationMessage" />
         <item itemvalue="Application.NotificationDate" />
       </list>
     </recent_temporary>
