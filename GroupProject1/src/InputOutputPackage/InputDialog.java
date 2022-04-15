@@ -5,8 +5,8 @@
  */
 package InputOutputPackage;
 
-import AssignmentPackage.Assignment;
-import AssignmentPackage.Quiz;
+import GroupProject1.src.AssignmentPackage.Assignment;
+import GroupProject1.src.AssignmentPackage.Quiz;
 
 
 /**

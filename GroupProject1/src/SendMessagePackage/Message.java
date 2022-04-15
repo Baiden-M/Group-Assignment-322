@@ -1,4 +1,4 @@
-package SendMessage;
+package SendMessagePackage;
 
 public class Message {
     
@@ -18,7 +18,7 @@ public class Message {
     }
     
     public String user_name(){
-        return uner_name
+        return user_name;
     }
     
     public void setReceiveName(String rn){
@@ -40,7 +40,7 @@ public class Message {
     public void print_Message(){
         System.out.println("From:" + user_name);
         System.out.println("TO: " + receive_name);
-        System.out.println("Message:\n")
+        System.out.println("Message:\n");
         System.out.println("     " + message);
     }
     

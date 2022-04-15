@@ -1,10 +1,10 @@
-package AssignmentPackage;
+package GroupProject1.src.AssignmentPackage;
 
 public abstract class  Assignment {
     PriorityBehavior priorityBehavior;
     String color;
     String dueDate;
-    String priorityLevel;
+    PriorityBehavior priorityLevel;
 
 
      public void addAssignment(String c, String d, String p){
@@ -34,5 +34,9 @@ public abstract class  Assignment {
      public String getDueDate(){
         return dueDate;
      }
-     public abstract String getPriorityBehavior();
+     public String getPriorityBehavior() {
+        return priorityLevel.getPriority();
+     }
+
+     public abstract void printFullAssignment();
 }
