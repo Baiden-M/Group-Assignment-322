@@ -42,16 +42,31 @@ public class NotificationDate {
 
     }
 
+    /**
+     * Change the day the notification should arrive.
+     *
+     * @param date: new date (month/day)
+     */
     public void changeDay(String date) {
         String[] month_day_split = date.split("/");
         this.month = Integer.parseInt(month_day_split[0]);
         this.day = Integer.parseInt(month_day_split[1]);
     }
 
+    /**
+     * Returns the date in a readable way to the user.
+     *
+     * @return string that contains the date due.
+     */
     public String getDate() {
         return "Month: %d Day: %d Time: %d:%d".formatted(this.month,this.day,this.time_hour,this.time_minute);
     }
 
+    /**
+     * Determines if the notification should be sent by checking the user's current time.
+     *
+     * @return true/false depending on if the user should receive a notification message.
+     */
     public boolean shouldSend() {
         int[] current_date = {java.time.LocalDate.now().getMonth().getValue(),java.time.LocalDate.now().getDayOfMonth()};
         int[] current_time = {java.time.LocalTime.now().getHour(),java.time.LocalTime.now().getMinute()};
@@ -68,12 +83,4 @@ public class NotificationDate {
         return false;
     }
 
-    public static void main(String[] args) {
-        NotificationDate nd = new NotificationDate(5);
-        nd.setDate();
-        System.out.println("print date");
-        System.out.println(nd.getDate());
-        System.out.println("printing if should send");
-        System.out.println(nd.shouldSend());
-    }
 }

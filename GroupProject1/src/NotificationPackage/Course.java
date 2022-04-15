@@ -3,13 +3,26 @@ package NotificationPackage;
 import java.util.LinkedList;
 import java.util.Scanner;
 
+/**
+ * This class contains information for adding/removing assignments
+ * for a class and receiving the notifications from them.
+ */
 public class Course extends SubjectOfNotification {
     private LinkedList<CourseAssignment> assignments = new LinkedList<>();
 
+    /**
+     * Set the name of the course.
+     *
+     * @param name: name of subject.
+     */
     public void setName(String name) {
         this.name_of_subject = name;
     }
 
+    /**
+     * Add an assignment to the course. This will push a new assignment onto
+     * the linked list of assignments.
+     */
     public void addAssignment() {
         Scanner scan = new Scanner(System.in);
         CourseAssignment new_assignment = new CourseAssignment();
@@ -20,6 +33,10 @@ public class Course extends SubjectOfNotification {
         assignments.push(new_assignment);
     }
 
+    /**
+     * Remove an assignment from the linked list. Will ask the user for the
+     * name of the assignment they want to remove, and remove it if it exists.
+     */
     public void removeAssignment() {
         if (assignments.size() == 0) {
             System.out.println("No assignments to remove.");
