@@ -7,6 +7,7 @@ package InputOutputPackage;
 
 import GroupProject1.src.AssignmentPackage.Assignment;
 import GroupProject1.src.AssignmentPackage.Quiz;
+import java.util.*;
 
 
 /**
@@ -16,7 +17,7 @@ import GroupProject1.src.AssignmentPackage.Quiz;
 public class InputDialog {
     
     static InputDialog uniqueInput;
-    
+    private List<Assignment> assignments = new ArrayList<Assignment>();
     private InputDialog(){}
     public static synchronized InputDialog getInstance(){
         
@@ -32,13 +33,16 @@ public class InputDialog {
            Assignment assignment = new Quiz();
            assignment.addAssignment("Blue", "08/25/2022", assignment.getPriorityBehavior());
 
-           assignment.printAssignment();
-
-
+           //assignment.printAssignment();
+           assignments.add(assignment);
+           
         }
+        printOutput();
     }
     public void printOutput(){
-        
+        HourData outputData = new HourData();
+        HourObs observer = new HourObs(outputData);
+        outputData.getAssignments(assignments);
     }
         
 }

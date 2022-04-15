@@ -4,22 +4,34 @@
  * and open the template in the editor.
  */
 package InputOutputPackage;
-
+import java.util.*;
+import GroupProject1.src.AssignmentPackage.Assignment;
 /**
  *
  * @author silve
  */
 public class HourData implements OutputObs{
-    public void registerObserver(){
-        
+    private List<Observer> observers;
+    private List<Assignment> assignments;
+   
+    public HourData(){
+        observers = new ArrayList<Observer>();
     }
-    public void removeObserver(){
-        
+    
+    public void registerObserver(Observer o){
+        observers.add(o);
     }
-    public void notifyObserver(){
-        
+    public void removeObserver(Observer o){
+        observers.remove(o);
     }
-    public void getAssignments(){
-        
+    public void notifyObservers(){
+        for(Observer observer : observers){
+            observer.update(assignments);
+        }
     }
+    public void getAssignments(List<Assignment> newAssignments){
+        assignments = newAssignments;
+        notifyObservers();
+    }
+    
 }

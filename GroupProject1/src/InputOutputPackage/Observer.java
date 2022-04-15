@@ -5,12 +5,15 @@
  */
 package InputOutputPackage;
 
+import GroupProject1.src.AssignmentPackage.Assignment;
+import java.util.List;
+
 /**
  *
  * @author silve
  */
 public interface Observer {
-    public void update();
+    public void update(List<Assignment> assignments);
     
     public void display();
         
