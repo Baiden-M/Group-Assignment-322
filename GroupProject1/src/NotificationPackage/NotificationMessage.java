@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class NotificationMessage {
     private String message_content;
 
-    public void createMessage(String message) {
-        this.message_content = message;
-    }
-
+    /**
+     * Asks the user to enter the message used in the notification.
+     */
     public void createMessage() {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Please enter the content of your notification message you wish to receive:");
         String message = scan.nextLine();
 
-        this.createMessage(message);
+        this.message_content = message;
     }
+
 
     public void sendMessage() {
         System.out.println(this.message_content);

@@ -7,7 +7,7 @@ public class NotificationDate {
     private int day;
     private int time_hour;
     private int time_minute;
-    private final float send_hours_before;
+    float send_hours_before;
 
     public NotificationDate() {
         this.send_hours_before = 0;
@@ -40,6 +40,12 @@ public class NotificationDate {
         this.time_minute = Integer.parseInt(time_split[1]);
 
 
+    }
+
+    public void changeDay(String date) {
+        String[] month_day_split = date.split("/");
+        this.month = Integer.parseInt(month_day_split[0]);
+        this.day = Integer.parseInt(month_day_split[1]);
     }
 
     public String getDate() {

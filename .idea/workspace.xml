@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="cf6f2008-b0d2-47fd-af60-45e411e10f72" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/CourseAssignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/CourseAssignment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/NotificationDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/NotificationDate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/NotificationMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/NotificationMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Group-Assignment-322/NotificationPackage/NotificationDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Group-Assignment-322/NotificationPackage/NotificationDate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/ProjectNotificationStrategyDesignClassDiagram.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +32,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/bryce/ESOF-322-Group-Assignment"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/bryce/ESOF-322-Group-Assignment&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.NotificationMessage">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="ESOF-322-Group-Assignment" />
