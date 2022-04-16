@@ -4,7 +4,7 @@ public abstract class  Assignment {
     PriorityBehavior priorityBehavior;
     String color;
     String dueDate;
-    PriorityBehavior priorityLevel;
+    GroupProject1.src.AssignmentPackage.PriorityBehavior priorityLevel;
 
 
      public void addAssignment(String c, String d, String p){

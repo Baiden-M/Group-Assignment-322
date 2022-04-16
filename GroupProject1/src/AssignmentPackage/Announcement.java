@@ -4,7 +4,7 @@ import java.util.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-public class Announcement extends Assignment{
+public class Announcement extends GroupProject1.src.AssignmentPackage.Assignment {
 
     // fields
     String title;
