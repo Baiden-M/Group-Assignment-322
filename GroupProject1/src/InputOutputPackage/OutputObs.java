@@ -7,7 +7,8 @@ package InputOutputPackage;
 
 /**
  *
- * @author silve
+ * @author Baiden McElroy
+ * interface for subject classes which hold the observers
  */
 public interface OutputObs {
     public void registerObserver(Observer o);

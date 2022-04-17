@@ -10,7 +10,8 @@ import java.util.List;
 
 /**
  *
- * @author silve
+ * @author Baiden McElroy
+ * interface for observers
  */
 public interface Observer {
     public void update(List<Assignment> assignments);
