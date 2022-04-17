@@ -27,17 +27,23 @@ public class InputDialog {
         return uniqueInput;
     }
     public void runInput(){
-        String input = "q";
+        Scanner scanner = new Scanner(System.in);
+        String input = "";
+        while(!input.equals("q")){
+            System.out.println("Enter choice");
+            input = scanner.nextLine();
 
-        if(input == ("q")){
-           Assignment assignment = new Quiz();
-           assignment.addAssignment("Blue", "08/25/2022", assignment.getPriorityBehavior());
 
-           //assignment.printAssignment();
-           assignments.add(assignment);
-           
+            if(input.equals("a")){
+               Assignment assignment = new Quiz();
+               assignment.addAssignment("Blue", "08/25/2022", assignment.getPriorityBehavior());
+
+               //assignment.printAssignment();
+               assignments.add(assignment);
+
+            }
+            printOutput();
         }
-        printOutput();
     }
     public void printOutput(){
         HourData outputData = new HourData();
