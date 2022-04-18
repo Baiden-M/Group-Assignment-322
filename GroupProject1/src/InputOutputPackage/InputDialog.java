@@ -14,7 +14,7 @@ import CreateUserPackage.Student;
 import CreateUserPackage.Database;
 import NotificationPackage.Course;
 import NotificationPackage.CourseAssignment;
-
+import SendMessagePackage.Message;
 import java.util.*;
 
 
@@ -28,8 +28,10 @@ public class InputDialog {
     static InputDialog uniqueInput;    //singleton class instance      
     private List<Assignment> assignments = new ArrayList<Assignment>();
     private InputDialog(){}
-    Scanner scanner = new Scanner(System.in);
-    String input = "";
+    private Message message = new Message();
+    private Course course = new Course();
+    private Scanner scanner = new Scanner(System.in);
+    private String input = "";
     /**
     *    controls singleton instances
     *    returns singleton instance
@@ -49,7 +51,7 @@ public class InputDialog {
         
         
         while(!input.equals("quit")){
-            System.out.println("Enter choice: add assignment, import assignments, notification, user, login, message, quit");
+            System.out.println("Enter choice: add assignment, import assignments, create notification, check notifications, create user, login, send message, quit");
             input = scanner.nextLine();
 
             switch(input){
@@ -60,16 +62,19 @@ public class InputDialog {
                     importSchedule();
                 case "quit":
                     break;
-                case "notification":
-                    sendNotification();
+                case "create notification":
+                    createNotification();
                     break;
-                case "user":
+                case "check notifications":
+                    checkNotifications();
+                    break;
+                case "create user":
                     createUser();
                     break;
                 case "login":
                     login();
                     break;
-                case "message":
+                case "send message":
                     sendMessage();
                     break;
                 default:
@@ -131,6 +136,9 @@ public class InputDialog {
         }
                                     
     }
+    /**
+     * imports a schedule from a file
+     */
     public void importSchedule(){
         System.out.println("Importing schedule...");
         ScheduleImport importer = new ScheduleImport();
@@ -139,20 +147,22 @@ public class InputDialog {
             assignments.add(records.get(i));
         }
 
-
-
-
-
     }
 
     /**
      * creates a notification
      */
-    public void sendNotification(){
-        Course math = new Course();
-        math.addAssignment();
+    public void createNotification(){
+        
+        course.addAssignment();
 
-        for (CourseAssignment as : math.getAssignments()) {
+    }
+    /**
+     * checks a notification
+     */
+    public void checkNotifications(){
+        System.out.println("list of current notifications");
+        for (CourseAssignment as : course.getAssignments()) {
             as.notifyWithMessage();
         }
     }
@@ -189,6 +199,15 @@ public class InputDialog {
      * sends a message
      */
     public void sendMessage(){
+        String sender, reciever, text;
+        System.out.println("enter message sender");
+        sender = scanner.nextLine();
+        System.out.println("enter message reciever");
+        reciever = scanner.nextLine();
+        System.out.println("enter message text");
+        text = scanner.nextLine();
+        message.send_message(sender, reciever, text);
+        message.print_Message();
         
     }
     

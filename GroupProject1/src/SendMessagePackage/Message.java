@@ -5,7 +5,7 @@ public class Message {
     String user_name;
     String receive_name;
     String message;
-    
+     
     //parameter un is username, rn is receiver, m is message and no return
     public void send_message(String un, String rn, String m) {
         setUserName(un);
