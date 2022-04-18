@@ -9,6 +9,7 @@ import GroupProject1.src.AssignmentPackage.Assignment;
 import GroupProject1.src.AssignmentPackage.Quiz;
 import CreateUserPackage.User;
 import CreateUserPackage.Student;
+import CreateUserPackage.Database;
 import java.util.*;
 
 
@@ -43,7 +44,7 @@ public class InputDialog {
         
         
         while(!input.equals("quit")){
-            System.out.println("Enter choice: assignment, notification, user, message, quit");
+            System.out.println("Enter choice: assignment, notification, user, login, message, quit");
             input = scanner.nextLine();
 
             switch(input){
@@ -57,6 +58,9 @@ public class InputDialog {
                     break;
                 case "user":
                     createUser();
+                    break;
+                case "login":
+                    login();
                     break;
                 case "message":
                     sendMessage();
@@ -112,6 +116,29 @@ public class InputDialog {
      */
     public void createUser(){
         User student = new Student();
+    }
+    /**
+     * Logs into account
+     */
+    public void login()
+    {
+        Database d = Database.getInstance();
+        System.out.println("Enter your username");
+        String un = scanner.nextLine();
+        System.out.println("Enter your password");
+        String pass = scanner.nextLine();
+        if(d.login.get(un) == null)
+        {
+            System.out.println("Incorrect username or password");
+        }
+        else if ((d.login.get(un)).equals(pass))
+        {
+            System.out.println("Successfully Logged In");
+        }
+        else
+        {
+            System.out.println("Incorrect username or password");
+        }
     }
     /**
      * sends a message
