@@ -5,6 +5,7 @@
  */
 package InputOutputPackage;
 
+import GroupProject1.src.AssignmentPackage.Announcement;
 import GroupProject1.src.AssignmentPackage.Assignment;
 import GroupProject1.src.AssignmentPackage.Quiz;
 import CreateUserPackage.User;
@@ -78,27 +79,46 @@ public class InputDialog {
      * prompts user to add information to create an assignment
      */
     public void addAssignment(){
-        System.out.println("Enter assignment type: quiz, homework");
+        System.out.println("Enter assignment type: quiz, homework,announcement");
         input = scanner.nextLine();
         if(input.equals("quiz")){
             Assignment assignment = new Quiz(); //creates an assignment of type quiz
-            String color, date;
+            String name, color, date;
+            System.out.println("enter quiz name");
+            name = scanner.nextLine();
             System.out.println("enter quiz color");
             color = scanner.nextLine();
             System.out.println("enter quiz date: ex 08/25/2022");
             date = scanner.nextLine();
-            assignment.addAssignment(color, date, assignment.getPriorityBehavior());
+            assignment.addAssignment(name, color, date, assignment.getPriorityBehavior());
             assignments.add(assignment); //adds assignment to the observer
         }
         else if(input.equals("homework")){
-            Assignment assignment = new Quiz(); //creates an assignment of type homework
-            String color, date;
+            Assignment assignment= new GroupProject1.src.AssignmentPackage.Homework();//creates an assignment of type homework
+            String name, color, date;
+            System.out.println("enter homework name");
+            name = scanner.nextLine();
             System.out.println("enter homework color");
             color = scanner.nextLine();
             System.out.println("enter homework date: ex 08/25/2022");
             date = scanner.nextLine();
-            assignment.addAssignment(color, date, assignment.getPriorityBehavior());
+            assignment.addAssignment(name, color, date, assignment.getPriorityBehavior());
             assignments.add(assignment); //adds assignment to the observer
+        }
+        else if(input.equals("announcement")){
+            Assignment assignment = new Announcement();
+            String name, color, date;
+            System.out.println("enter announcement name");
+            name = scanner.nextLine();
+            System.out.println("enter announcement color");
+            color = scanner.nextLine();
+            System.out.println("enter announcement date: ex 08/25/2022");
+            date = scanner.nextLine();
+            date = scanner.nextLine();
+            assignment.addAssignment(name, color, date, assignment.getPriorityBehavior());
+            assignments.add(assignment);
+
+
         }
         else{
             System.out.println("incorrect assignment type");
