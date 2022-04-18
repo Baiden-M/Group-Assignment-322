@@ -60,19 +60,4 @@ public class Student extends User{
             User student = new D2L(this);
         }
     }
-    public void Login()
-    {
-        System.out.println("Enter your username");
-        String un = input.nextLine();
-        System.out.println("Enter your password");
-        String pass = input.nextLine();
-        if ((d.login.get(un)).equals(pass))
-        {
-            System.out.println("Successfully Logged In");
-        }
-        else
-        {
-            System.out.println("Incorrect username or password");
-        }
-    }
 }
