@@ -6,7 +6,7 @@
 package CreateUserPackage;
 
 /**
- *
+ * Abstract decorator class that allows users to link account to a third-party website
  * @author Conor
  */
 public abstract class ThirdPartyWebsiteDecorator extends User{
