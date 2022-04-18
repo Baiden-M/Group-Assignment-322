@@ -7,25 +7,28 @@ import java.text.ParseException;
 public class Homework extends Assignment{
     
     // fields
-    String title;
-    Date dateAssigned;
-    Date dateDue;
-    String timeDue;
-    String course;
-    String attachedFiles;
+    String title;           // title of the homework assignment
+    Date dateAssigned;      // date the homework was assigned/posted
+    Date dateDue;           // date the hw is due
+    String timeDue;         // time the hw is due HH:MM AM/PM
+    String course;          // course number (CSCI 338)
+    String attachedFiles;   // names of files that are attached
 
     // constructors
+
+    // creates empty Homework object, sets priority
     public Homework() {
-        this.priorityLevel = new MediumPriority();
+        this.priorityLevel = new MediumPriority();      // all homeworks are set with medium priority behavior
     }
+    // creates Homework object with all info to fill in data attributes
     public Homework(String title, String dateAssignedString, String dateDueString,
                     String timeDue, String course, String attachedFiles) {
-        this.priorityLevel = new MediumPriority();
+        this.priorityLevel = new MediumPriority();      // all homeworks set with medium priority behavior
         this.title = title;
         try {
-            this.dateAssigned = new SimpleDateFormat("MM/dd/yyyy").parse(dateAssignedString);
-            this.dateDue = new SimpleDateFormat("MM/dd/yyyy").parse(dateDueString);
-        } catch (ParseException e) {
+            this.dateAssigned = new SimpleDateFormat("MM/dd/yyyy").parse(dateAssignedString);   // sets format and parses
+            this.dateDue = new SimpleDateFormat("MM/dd/yyyy").parse(dateDueString);             // string dates into Date objects
+        } catch (ParseException e) {    // catching parsing errors from this type changing
             e.printStackTrace();
         }
         this.timeDue = timeDue;
@@ -35,6 +38,8 @@ public class Homework extends Assignment{
     
 
     // methods
+
+    // print this Homework Assignment in full description format
     public void printFullAssignment() {
         SimpleDateFormat f = new SimpleDateFormat("MMM dd, yyyy");
         System.out.println(priorityLevel.getMessage());
@@ -52,6 +57,27 @@ public class Homework extends Assignment{
     public String getCourse() { return this.course; }
     public String getAttachedFiles() { return this.attachedFiles; }
 
+    // setter methods
+    public void setTitle(String title) { this.title = title; }
+    public void setDateAssigned(String date) {
+        try{
+            SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy");   // sets format for Date objects
+            this.dateAssigned = format.parse(date);
+        } catch (ParseException e) {        // again with the error catch
+            e.printStackTrace();
+        }
+    }
+    public void setDateDue(String date) {
+        try{
+            SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy");   // sets format for Date objects
+            this.dateDue = format.parse(date);
+        } catch (ParseException e) {        // again with the error catch
+            e.printStackTrace();
+        }
+    }
+    public void setTimeDue(String time) { this.timeDue = time; }
+    public void setCourse(String course) { this.course = course; }
+    public void setAttachedFiles(String files) { this.attachedFiles = files; }  // one string, could be list of files with commas (file1.pdf, file4.docx, etc.)
 
 
 /* I think one call i Assignment is enough, just assign behavior in Homework    

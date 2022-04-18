@@ -1,10 +1,11 @@
 package GroupProject1.src.AssignmentPackage;
 
+// Abstract Assignment class (extended by Quiz, Homework, Announcement)
 public abstract class  Assignment {
-    PriorityBehavior priorityBehavior;
-    String color;
+    String color;       // color for printing purposes
     String dueDate;
-    GroupProject1.src.AssignmentPackage.PriorityBehavior priorityLevel;
+    GroupProject1.src.AssignmentPackage.PriorityBehavior priorityLevel; // every Assignment has priority behavior, set when created
+
 
 
      public void addAssignment(String c, String d, String p){
@@ -14,7 +15,7 @@ public abstract class  Assignment {
      public void deleteAssignment(){
 
      }
-     public void printAssignment(){
+     public void printAssignment(){                    // prints basic parts of the Assignment
          System.out.println(getPriorityBehavior());
          System.out.println(getColor());
          System.out.println(getDueDate());
@@ -34,9 +35,9 @@ public abstract class  Assignment {
      public String getDueDate(){
         return dueDate;
      }
-     public String getPriorityBehavior() {
+     public String getPriorityBehavior() {      // could use priority behavior to determine Notification behavior
         return priorityLevel.getPriority();
      }
 
-     public abstract void printFullAssignment();
+     public abstract void printFullAssignment();    // defined in child class, prints assignment in full description mode
 }
