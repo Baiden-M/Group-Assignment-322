@@ -6,7 +6,7 @@
 package CreateUserPackage;
 
 /**
- *
+ * Class that creates passwords
  * @author Conor
  */
 public class Password {
