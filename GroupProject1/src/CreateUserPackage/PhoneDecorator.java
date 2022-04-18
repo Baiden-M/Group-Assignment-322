@@ -6,7 +6,7 @@
 package CreateUserPackage;
 
 /**
- *
+ * Abstract decorator class that allows users to add a phone number to their account
  * @author Conor
  */
 public abstract class PhoneDecorator extends User{
