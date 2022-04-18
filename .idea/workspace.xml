@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf6f2008-b0d2-47fd-af60-45e411e10f72" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/DiagramsNUserStories.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Group-Assignment-322/NotificationPackage/DiagramsNUserStories.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/D2L.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/D2L.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/Password.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/Password.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/PhoneDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/PhoneDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/PhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/PhoneNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/ThirdPartyWebsiteDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/ThirdPartyWebsiteDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/Username.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/CreateUserPackage/Username.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject1/src/InputOutputPackage/InputDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/InputOutputPackage/InputDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/CourseAssignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/CourseAssignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GroupProject1/src/SendMessagePackage/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/SendMessagePackage/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Group-Assignment-322/CreateUserPackage/D2L.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Group-Assignment-322/CreateUserPackage/D2L.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Group-Assignment-322/CreateUserPackage/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Group-Assignment-322/CreateUserPackage/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Group-Assignment-322/CreateUserPackage/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Group-Assignment-322/CreateUserPackage/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Group-Assignment-322/InputOutputPackage/InputDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Group-Assignment-322/InputOutputPackage/InputDialog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Group-Assignment-322/NotificationPackage/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Group-Assignment-322/NotificationPackage/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Group-Assignment-322/NotificationPackage/CourseAssignment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Group-Assignment-322/NotificationPackage/CourseAssignment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Group-Assignment-322/SendMessagePackage/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Group-Assignment-322/SendMessagePackage/Message.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
