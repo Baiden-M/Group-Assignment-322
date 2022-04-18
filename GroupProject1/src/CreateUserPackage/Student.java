@@ -19,7 +19,13 @@ public class Student extends User{
     private Password password;
     private Scanner input = new Scanner(System.in);
     private Database d = Database.getInstance();
-
+/**
+* Constructor class that asks user for first name, last name, user name, and password. 
+* Ensures that the username has not already been used and that the password is long enough.
+* Asks user if they would like to add a phone number and if they do it uses a decorator class to add the phone number.
+* Asks user if they would like to connect their D2L and if they do it uses a decorator to connect D2L.
+*
+*/
     public Student(){
         System.out.println("Please enter your first name");
         String s = input.nextLine();
