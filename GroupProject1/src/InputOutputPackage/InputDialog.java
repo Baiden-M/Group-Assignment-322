@@ -7,6 +7,8 @@ package InputOutputPackage;
 
 import GroupProject1.src.AssignmentPackage.Assignment;
 import GroupProject1.src.AssignmentPackage.Quiz;
+import CreateUserPackage.User;
+import CreateUserPackage.Student;
 import java.util.*;
 
 
@@ -109,7 +111,7 @@ public class InputDialog {
      * creates a user
      */
     public void createUser(){
-        
+        User student = new Student();
     }
     /**
      * sends a message
