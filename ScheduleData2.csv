@@ -1,0 +1,14 @@
+Type,Description,Date Assigned,Date Due,Time Due,Course,Attached Elements,Announcer,Content,Date Open,Time Open,Duration,Color
+Homework,Ch 1,1/20/2022,1/27/2022,11:00 PM,CSCI 305,CH1HW.pdf,,,,,,blue
+Homework,Ch 2,1/27/2022,2/3/2022,11:00 PM,CSCI 305,CH2HW.pdf,,,,,,purple
+Homework,Ch 3,2/3/2022,2/10/2022,11:00 PM,CSCI 305,CH3HW.pdf,,,,,,red
+Quiz,Ch 1 Quiz,1/27/2022,1/28/2022,8:00 PM,CSCI 366,,,,1/28/2022,9:00 AM,0:50:00,yellow
+Quiz,Ch 2 Quiz,2/3/2022,2/4/2022,8:00 PM,CSCI 366,,,,2/3/2022,9:00 AM,0:50:00,blue
+Quiz,Ch 3 Quiz,2/10/2022,2/11/2022,8:00 PM,CSCI 366,,,,2/11/2022,9:00 AM,0:50:00,pink
+Announcement,Unit 1 Exam,2/11/2022,2/11/2022,,CSCI 305,,Hunter Lloyd,This upcoming quiz is our Unit 1 Exam,,,,orange
+Quiz,Unit 1 Exam,2/11/2022,2/14/2022,10:00 AM,CSCI 305,,,,2/14/2022,8:00 AM,0:50:00,yellow
+Homework,March HW,3/7/2022,3/31/2022,7:00 PM,CSCI 338,MarchHW.pdf,,,,,,pink
+Homework,April HW,4/6/2022,5/1/2022,7:00 PM,CSCI 338,AprilHW.pdf,,,,,,purple
+Announcement,Final Exam is Coming,5/4/2022,5/4/2022,,CSCI 338,,Binhai Zhu,Our final exam is next week,,,,green
+Announcement,Final Exam is Here,5/10/2022,5/10/2022,,CSCI 338,,Binhai Zhu,Our final exam is tomorrow!!,,,,blue
+Quiz,Final Exam,5/9/2022,5/11/2022,12:00 PM,CSCI 338,,,,5/11/2022,10:00 AM,2:00:00,red

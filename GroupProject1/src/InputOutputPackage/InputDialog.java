@@ -5,6 +5,7 @@
  */
 package InputOutputPackage;
 
+import GroupProject1.src.AssignmentPackage.ScheduleImport;
 import GroupProject1.src.AssignmentPackage.Announcement;
 import GroupProject1.src.AssignmentPackage.Assignment;
 import GroupProject1.src.AssignmentPackage.Quiz;
@@ -45,13 +46,15 @@ public class InputDialog {
         
         
         while(!input.equals("quit")){
-            System.out.println("Enter choice: assignment, notification, user, login, message, quit");
+            System.out.println("Enter choice: add assignment, import assignments, notification, user, login, message, quit");
             input = scanner.nextLine();
 
             switch(input){
-                case "assignment":
+                case "add assignment":
                     addAssignment();
                     break;
+                case "import assignments":
+                    importSchedule();
                 case "quit":
                     break;
                 case "notification":
@@ -125,6 +128,20 @@ public class InputDialog {
         }
                                     
     }
+    public void importSchedule(){
+        System.out.println("Importing schedule...");
+        ScheduleImport importer = new ScheduleImport();
+        ArrayList<Assignment> records = importer.importSchedule();
+        for(int i = 0; i < records.size(); i++){
+            assignments.add(records.get(i));
+        }
+
+
+
+
+
+    }
+
     /**
      * creates a notification
      */

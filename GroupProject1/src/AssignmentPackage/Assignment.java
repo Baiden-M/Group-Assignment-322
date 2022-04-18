@@ -10,7 +10,7 @@ public abstract class  Assignment {
 
 
      public void addAssignment(String n, String c, String d, String p){ //add assignment with color and due date
-         setName(n);
+         setTitle(n);
          setColor(c);
          setDueDate(d);
      }
@@ -18,10 +18,11 @@ public abstract class  Assignment {
 
      }
      public void printAssignment(){// prints basic parts of the Assignment
-         System.out.println(getName());
+         System.out.println(getTitle());
          System.out.println(getPriorityBehavior());
          System.out.println(getColor());
          System.out.println(getDueDate());
+         System.out.println(" ");
      }
      public void setColor(String c){
         color = c;
@@ -42,8 +43,8 @@ public abstract class  Assignment {
         return priorityLevel.getPriority();
      } //get priority behabior
 
-    public void setName(String n){name = n;}
-    public String getName(){ return name;}
+    public void setTitle(String n){name = n;}
+    public String getTitle(){ return name;}
 
      public abstract void printFullAssignment();    // defined in child class, prints assignment in full description mode
 }

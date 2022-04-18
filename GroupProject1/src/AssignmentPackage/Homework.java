@@ -20,21 +20,22 @@ public class Homework extends Assignment{
     public Homework() {
         this.priorityLevel = new MediumPriority();      // all homeworks are set with medium priority behavior
     }
+
     // creates Homework object with all info to fill in data attributes
-    public Homework(String title, String dateAssignedString, String dateDueString,
-                    String timeDue, String course, String attachedFiles) {
-        this.priorityLevel = new MediumPriority();      // all homeworks set with medium priority behavior
-        this.title = title;
-        try {
-            this.dateAssigned = new SimpleDateFormat("MM/dd/yyyy").parse(dateAssignedString);   // sets format and parses
-            this.dateDue = new SimpleDateFormat("MM/dd/yyyy").parse(dateDueString);             // string dates into Date objects
-        } catch (ParseException e) {    // catching parsing errors from this type changing
-            e.printStackTrace();
-        }
-        this.timeDue = timeDue;
-        this.course = course;
-        this.attachedFiles = attachedFiles;
-    }
+//    public Homework(String title, String dateAssignedString, String dateDueString,
+//                    String timeDue, String course, String attachedFiles) {
+//        this.priorityLevel = new MediumPriority();      // all homeworks set with medium priority behavior
+//        this.title = title;
+//        try {
+//            this.dateAssigned = new SimpleDateFormat("MM/dd/yyyy").parse(dateAssignedString);   // sets format and parses
+//            this.dateDue = new SimpleDateFormat("MM/dd/yyyy").parse(dateDueString);             // string dates into Date objects
+//        } catch (ParseException e) {    // catching parsing errors from this type changing
+//            e.printStackTrace();
+//        }
+//        this.timeDue = timeDue;
+//        this.course = course;
+//        this.attachedFiles = attachedFiles;
+//    }
     
 
     // methods
