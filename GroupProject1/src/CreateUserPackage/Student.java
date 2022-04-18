@@ -36,6 +36,7 @@ public class Student extends User{
         }
         username = new Username(s);
         System.out.println("Please enter a password");
+        s = input.nextLine();
         while(s.length() < 8)
         {
             System.out.println("Password is too short. Please enter a new password (8 characters or more)");
