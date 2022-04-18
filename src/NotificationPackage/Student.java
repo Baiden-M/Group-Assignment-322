@@ -1,4 +1,7 @@
 package NotificationPackage;
+/**
+ * @author Bryce
+ */
 
 public class Student {
     private String full_name;

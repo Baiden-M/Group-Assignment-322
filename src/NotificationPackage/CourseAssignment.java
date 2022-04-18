@@ -1,4 +1,7 @@
 package NotificationPackage;
+/**
+ * @author Bryce
+ */
 
 public class CourseAssignment {
     String assignment_name;

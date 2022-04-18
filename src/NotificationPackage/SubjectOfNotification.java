@@ -1,5 +1,9 @@
 package NotificationPackage;
 
+/**
+ * @author Bryce
+ */
+
 public abstract class SubjectOfNotification {
     protected String name_of_subject;
 

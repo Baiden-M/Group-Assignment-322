@@ -1,4 +1,8 @@
 package GroupProject1.src.AssignmentPackage;
+/**
+ * Medium Priority Behavior
+ * @author Makayla
+ */
 
 public class MediumPriority implements PriorityBehavior{
     

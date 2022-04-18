@@ -1,4 +1,8 @@
 package GroupProject1.src.AssignmentPackage;
+/**
+ * Asbstract Assignment Class
+ * @author Makayla
+ */
 
 // Abstract Assignment class (extended by Quiz, Homework, Announcement)
 public abstract class  Assignment {

@@ -3,6 +3,10 @@ package GroupProject1.src.AssignmentPackage;
 import java.util.*;
 import java.text.SimpleDateFormat;
 import java.text.ParseException;
+/**
+ * Class that creates quizzes
+ * @author Makayla and Jacob
+ */
 
 public class Quiz extends Assignment{
 

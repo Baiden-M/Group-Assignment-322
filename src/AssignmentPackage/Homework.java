@@ -4,6 +4,11 @@ import java.util.*;
 import java.text.SimpleDateFormat;
 import java.text.ParseException;
 
+/**
+ * Class that creates homework objects
+ * @author Makayla and Jacob
+ */
+
 public class Homework extends Assignment{
     
     // fields

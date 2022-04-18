@@ -1,4 +1,8 @@
 package GroupProject1.src.AssignmentPackage;
+/**
+ * Low Priority Behavior
+ * @author Makayla
+ */
 
 public class LowPriority implements PriorityBehavior{
     

@@ -2,6 +2,10 @@ package NotificationPackage;
 
 import java.util.Scanner;
 
+/**
+ * @author Bryce
+ */
+
 public class NotificationDate {
     private int month;
     private int day;

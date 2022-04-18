@@ -3,6 +3,10 @@ package GroupProject1.src.AssignmentPackage;
 import java.util.*;
 import java.io.*;
 import java.text.SimpleDateFormat;
+/**
+ * Import a scheudle from a CSV file
+ * @author Jacob
+ */
 
 /*
     This class is an object that imports all data about assignments

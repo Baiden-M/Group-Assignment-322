@@ -3,7 +3,10 @@ package GroupProject1.src.AssignmentPackage;
 import java.util.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-
+/**
+ * Class that creates Annoucements
+ * @author Makayla and Jacob
+ */
 public class Announcement extends GroupProject1.src.AssignmentPackage.Assignment {
 
     // fields

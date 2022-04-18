@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 /**
  * Class that contains the message for the notification.
+ *
+ * @author Bryce
+ *
  */
 public class NotificationMessage {
     private String message_content;

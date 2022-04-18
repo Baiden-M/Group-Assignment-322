@@ -1,5 +1,9 @@
 package SendMessagePackage;
 
+/**
+ * @author Leo
+ */
+
 public class Message {
     
     String user_name;

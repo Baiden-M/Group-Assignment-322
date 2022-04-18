@@ -2,6 +2,9 @@ package NotificationPackage;
 
 import java.util.LinkedList;
 import java.util.Scanner;
+/**
+ * @author Bryce
+ */
 
 /**
  * This class contains information for adding/removing assignments
