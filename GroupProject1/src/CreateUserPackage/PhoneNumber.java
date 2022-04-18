@@ -6,7 +6,7 @@
 package CreateUserPackage;
 import java.math.BigInteger;
 /**
- *
+ * Decorator class that adds phone number to a user 
  * @author Conor
  */
 public class PhoneNumber extends PhoneDecorator{

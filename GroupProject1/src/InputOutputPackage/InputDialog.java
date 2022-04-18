@@ -12,6 +12,9 @@ import GroupProject1.src.AssignmentPackage.Quiz;
 import CreateUserPackage.User;
 import CreateUserPackage.Student;
 import CreateUserPackage.Database;
+import NotificationPackage.Course;
+import NotificationPackage.CourseAssignment;
+
 import java.util.*;
 
 
@@ -146,7 +149,12 @@ public class InputDialog {
      * creates a notification
      */
     public void sendNotification(){
-        
+        Course math = new Course();
+        math.addAssignment();
+
+        for (CourseAssignment as : math.getAssignments()) {
+            as.notifyWithMessage();
+        }
     }
     /**
      * creates a user

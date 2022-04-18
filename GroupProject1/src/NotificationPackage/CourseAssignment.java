@@ -6,6 +6,11 @@ public class CourseAssignment {
     NotificationMessage notification_message;
     private float notification_hours_before_due;
 
+    public CourseAssignment() {
+        this.notification_message = new NotificationMessage();
+        this.due_date = new NotificationDate();
+    }
+
     /**
      * Change the due date of the assignment.
      *

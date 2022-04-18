@@ -19,6 +19,10 @@ public class Course extends SubjectOfNotification {
         this.name_of_subject = name;
     }
 
+    public LinkedList<CourseAssignment> getAssignments() {
+        return this.assignments;
+    }
+
     /**
      * Add an assignment to the course. This will push a new assignment onto
      * the linked list of assignments.
@@ -29,6 +33,9 @@ public class Course extends SubjectOfNotification {
         System.out.println("Enter name of assignment: ");
         new_assignment.setAssignmentName(scan.nextLine());
         new_assignment.due_date.setDate();
+        System.out.print("How many hours before its due would you like to be notified? ");
+        float hours = scan.nextFloat();
+        new_assignment.setWhenNotifiedBeforeDue(hours);
         new_assignment.notification_message.createMessage();
         assignments.push(new_assignment);
     }
@@ -49,12 +56,21 @@ public class Course extends SubjectOfNotification {
                 System.out.println(assignments.get(i).assignment_name);
             }
             System.out.println("-------------------------------------------");
-            System.out.println("Which assignment would you like to remove? Enter its name:");
+            System.out.println("Which assignment would you like to remove? Enter its name: ");
             String remove = scan.nextLine();
 
             for (int i = 0; i < assignments.size(); i++) {
                 if (assignments.get(i).assignment_name.equals(remove)) assignments.remove(i);
             }
+        }
+    }
+
+    public static void main(String[] args) {
+        Course math = new Course();
+        math.addAssignment();
+
+        for (CourseAssignment as : math.assignments) {
+            as.notifyWithMessage();
         }
     }
 }
