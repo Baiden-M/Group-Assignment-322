@@ -20,6 +20,8 @@ public class InputDialog {
     static InputDialog uniqueInput;    //singleton class instance      
     private List<Assignment> assignments = new ArrayList<Assignment>();
     private InputDialog(){}
+    Scanner scanner = new Scanner(System.in);
+    String input = "";
     /*
         controls singleton instances
         returns singleton instance
@@ -36,23 +38,86 @@ public class InputDialog {
         uses scanner to get user input
     */
     public void runInput(){
-        Scanner scanner = new Scanner(System.in);
-        String input = "";
         
-        while(!input.equals("q")){
+        
+        while(!input.equals("quit")){
             System.out.println("Enter choice: a for assignment, q for quit");
             input = scanner.nextLine();
 
-
-            if(input.equals("a")){
-               Assignment assignment = new Quiz();    //creates an assignment of type quiz
-               assignment.addAssignment("Blue", "08/25/2022", assignment.getPriorityBehavior());
-               assignments.add(assignment); //adds assignment to the observer
-
+            switch(input){
+                case "assignment":
+                    addAssignment();
+                    break;
+                case "quit":
+                    break;
+                case "notification":
+                    sendNotification();
+                    break;
+                case "user":
+                    createUser();
+                    break;
+                case "message":
+                    sendMessage();
+                    break;
+                default:
+                    System.out.println("Enter a valid input");
+                    
+                    
             }
+            
             printOutput(); //calls print method to update observers
         }
     }
+    /**
+     * prompts user to add information to create an assignment
+     */
+    public void addAssignment(){
+        System.out.println("Enter assignment type: quiz or ");
+        input = scanner.nextLine();
+        if(input.equals("quiz")){
+            Assignment assignment = new Quiz(); //creates an assignment of type quiz
+            String color, date;
+            System.out.println("enter quiz color");
+            color = scanner.nextLine();
+            System.out.println("enter quiz date: ex 08/25/2022");
+            date = scanner.nextLine();
+            assignment.addAssignment(color, date, assignment.getPriorityBehavior());
+            assignments.add(assignment); //adds assignment to the observer
+        }
+        else if(input.equals("homework")){
+            Assignment assignment = new Quiz(); //creates an assignment of type homework
+            String color, date;
+            System.out.println("enter homework color");
+            color = scanner.nextLine();
+            System.out.println("enter homework date: ex 08/25/2022");
+            date = scanner.nextLine();
+            assignment.addAssignment(color, date, assignment.getPriorityBehavior());
+            assignments.add(assignment); //adds assignment to the observer
+        }
+        else{
+            System.out.println("incorrect assignment type");
+        }
+                                    
+    }
+    /**
+     * creates a notification
+     */
+    public void sendNotification(){
+        
+    }
+    /**
+     * creates a user
+     */
+    public void createUser(){
+        
+    }
+    /**
+     * sends a message
+     */
+    public void sendMessage(){
+        
+    }
+    
     /*
         updates observers which will print assignments
     */
