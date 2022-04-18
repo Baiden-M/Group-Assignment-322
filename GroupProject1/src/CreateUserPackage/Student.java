@@ -7,6 +7,7 @@ package CreateUserPackage;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Hashtable;
+import java.math.BigInteger;
 /**
  *
  * @author Conor
@@ -46,13 +47,16 @@ public class Student extends User{
         s = input.nextLine();
         if(s.equalsIgnoreCase("yes"))
         {
-            //*make new student
+            System.out.println("Please enter your phone number with no parentheses or dashes");
+            s = input.nextLine();
+            BigInteger num = new BigInteger(s);
+            User student = new PhoneNumber(this, num);
         }
         System.out.println("Would you like to link D2L? (yes/no)");
         s = input.nextLine();
         if(s.equalsIgnoreCase("yes"))
         {
-            //*make new student
+            User student = new D2L(this);
         }
     }
     public void Login()
