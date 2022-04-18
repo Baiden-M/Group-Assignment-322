@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf6f2008-b0d2-47fd-af60-45e411e10f72" name="Changes" comment="" />
+    <list default="true" id="cf6f2008-b0d2-47fd-af60-45e411e10f72" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/CourseAssignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/GroupProject1/src/NotificationPackage/CourseAssignment.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +29,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager" selected="Application.ImportTester">
+  <component name="RunManager" selected="Application.Course">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="ESOF-322-Group-Assignment" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,6 +93,19 @@
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
+    </configuration>
+    <configuration name="Course" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NotificationPackage.Course" />
+      <module name="Group-Assignment-322" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="NotificationPackage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AssignmentPackage.Driver" />
@@ -157,6 +174,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Course" />
         <item itemvalue="Application.ImportTester" />
         <item itemvalue="Application.Driver" />
         <item itemvalue="Application.NotificationMessage" />
