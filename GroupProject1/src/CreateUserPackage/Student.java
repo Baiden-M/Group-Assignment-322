@@ -9,7 +9,7 @@ import java.util.Scanner;
 import java.util.Hashtable;
 import java.math.BigInteger;
 /**
- *
+ * Student class that creates new students
  * @author Conor
  */
 public class Student extends User{
