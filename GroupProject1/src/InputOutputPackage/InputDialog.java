@@ -22,9 +22,9 @@ public class InputDialog {
     private InputDialog(){}
     Scanner scanner = new Scanner(System.in);
     String input = "";
-    /*
-        controls singleton instances
-        returns singleton instance
+    /**
+    *    controls singleton instances
+    *    returns singleton instance
     */
     public static synchronized InputDialog getInstance(){  
         
@@ -33,15 +33,15 @@ public class InputDialog {
         }
         return uniqueInput;
     }
-    /*
-        controls input to call other classes
-        uses scanner to get user input
-    */
+    /**
+     *   controls input to call other classes
+     *   uses scanner to get user input
+     */
     public void runInput(){
         
         
         while(!input.equals("quit")){
-            System.out.println("Enter choice: a for assignment, q for quit");
+            System.out.println("Enter choice: assignment, notification, user, message, quit");
             input = scanner.nextLine();
 
             switch(input){
@@ -72,7 +72,7 @@ public class InputDialog {
      * prompts user to add information to create an assignment
      */
     public void addAssignment(){
-        System.out.println("Enter assignment type: quiz or ");
+        System.out.println("Enter assignment type: quiz, homework");
         input = scanner.nextLine();
         if(input.equals("quiz")){
             Assignment assignment = new Quiz(); //creates an assignment of type quiz
@@ -118,8 +118,8 @@ public class InputDialog {
         
     }
     
-    /*
-        updates observers which will print assignments
+    /**
+    *   updates observers which will print assignments
     */
     public void printOutput(){
         HourData outputData = new HourData();
