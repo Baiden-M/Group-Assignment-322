@@ -6,7 +6,7 @@
 package CreateUserPackage;
 import java.util.*;
 /**
- *
+ * Class that creates usernames and adds them to the database
  * @author Conor
  */
 public class Username {
